@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "train_images": 24588,
+  "val_images": 5268,
+  "test_images": 5270,
+  "train_patients": 12294,
+  "val_patients": 2634,
+  "test_patients": 2635,
+  "test_positive_rate": 0.18956356736242885,
+  "overlap_verified": true
+}

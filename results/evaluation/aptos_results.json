@@ -1,0 +1,1106 @@
+{
+  "baseline": {
+    "variant": "baseline",
+    "n": 3662,
+    "n_pos": 1487,
+    "prevalence": 0.4060622610595303,
+    "auc": 0.9410265210367245,
+    "auc_ci_lo": 0.933472293443045,
+    "auc_ci_hi": 0.9484689588244984,
+    "sensitivity": 0.9952925353059852,
+    "specificity": 0.8050574712643678,
+    "groups": {
+      "light": {
+        "n": 16,
+        "n_pos": 5,
+        "prevalence": 0.3125,
+        "auc": 0.9636363636363636,
+        "auc_ci_lo": 0.8441958041958042,
+        "auc_ci_hi": 1.0,
+        "sensitivity": 0.8,
+        "specificity": 1.0,
+        "referral_burden_per1000": 0.0
+      },
+      "medium": {
+        "n": 2938,
+        "n_pos": 1210,
+        "prevalence": 0.4118447923757658,
+        "auc": 0.935485058922559,
+        "auc_ci_lo": 0.9268593361078193,
+        "auc_ci_hi": 0.9441858722965983,
+        "sensitivity": 0.9958677685950413,
+        "specificity": 0.7939814814814815,
+        "referral_burden_per1000": 121.17086453369639
+      },
+      "dark": {
+        "n": 708,
+        "n_pos": 272,
+        "prevalence": 0.384180790960452,
+        "auc": 0.9634165879654615,
+        "auc_ci_lo": 0.9494381322758166,
+        "auc_ci_hi": 0.9757655806978593,
+        "sensitivity": 0.9963235294117647,
+        "specificity": 0.8440366972477065,
+        "referral_burden_per1000": 96.04519774011297
+      }
+    },
+    "hc_dark": {
+      "n": 512,
+      "n_pos": 173,
+      "auc": 0.9738435043565741,
+      "auc_ci_lo": 0.9597521358873774,
+      "auc_ci_hi": 0.9863299833220925,
+      "sensitivity": 0.9942196531791907,
+      "specificity": 0.8790560471976401
+    },
+    "hc_light": null,
+    "score_distribution": {
+      "light": {
+        "neg_mean": 0.08418137376958673,
+        "neg_std": 0.12442608469265022,
+        "pos_mean": 0.8298828125,
+        "pos_std": 0.36949981491228767
+      },
+      "medium": {
+        "neg_mean": 0.2434346922500818,
+        "neg_std": 0.3708330980413061,
+        "pos_mean": 0.991334420196281,
+        "pos_std": 0.0504961990492203
+      },
+      "dark": {
+        "neg_mean": 0.1851654827868173,
+        "neg_std": 0.31539736807353125,
+        "pos_mean": 0.9904067095588235,
+        "pos_std": 0.04425749361044125
+      }
+    },
+    "threshold_sweep": {
+      "light": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8,
+          "specificity": 0.9090909090909091
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.8,
+          "specificity": 0.9090909090909091
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        }
+      ],
+      "medium": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9991735537190083,
+          "specificity": 0.7604166666666666
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9983471074380166,
+          "specificity": 0.7731481481481481
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9983471074380166,
+          "specificity": 0.7800925925925926
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.996694214876033,
+          "specificity": 0.7864583333333334
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9958677685950413,
+          "specificity": 0.7939814814814815
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9958677685950413,
+          "specificity": 0.7957175925925926
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9958677685950413,
+          "specificity": 0.7986111111111112
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9933884297520661,
+          "specificity": 0.8009259259259259
+        }
+      ],
+      "dark": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 1.0,
+          "specificity": 0.7935779816513762
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 1.0,
+          "specificity": 0.8142201834862385
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 1.0,
+          "specificity": 0.8302752293577982
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 1.0,
+          "specificity": 0.8371559633027523
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9963235294117647,
+          "specificity": 0.8440366972477065
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9963235294117647,
+          "specificity": 0.8532110091743119
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9963235294117647,
+          "specificity": 0.8623853211009175
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9963235294117647,
+          "specificity": 0.8692660550458715
+        }
+      ]
+    }
+  },
+  "aug-only": {
+    "variant": "aug-only",
+    "n": 3662,
+    "n_pos": 1487,
+    "prevalence": 0.4060622610595303,
+    "auc": 0.936668444526896,
+    "auc_ci_lo": 0.9290294028666832,
+    "auc_ci_hi": 0.9440194121956081,
+    "sensitivity": 0.9784801613987895,
+    "specificity": 0.8312643678160919,
+    "groups": {
+      "light": {
+        "n": 16,
+        "n_pos": 5,
+        "prevalence": 0.3125,
+        "auc": 0.9818181818181818,
+        "auc_ci_lo": 0.9,
+        "auc_ci_hi": 1.0,
+        "sensitivity": 0.8,
+        "specificity": 1.0,
+        "referral_burden_per1000": 0.0
+      },
+      "medium": {
+        "n": 2938,
+        "n_pos": 1210,
+        "prevalence": 0.4118447923757658,
+        "auc": 0.9292338632537496,
+        "auc_ci_lo": 0.9206403587427681,
+        "auc_ci_hi": 0.9387072510318413,
+        "sensitivity": 0.9785123966942149,
+        "specificity": 0.8153935185185185,
+        "referral_burden_per1000": 108.57726344452011
+      },
+      "dark": {
+        "n": 708,
+        "n_pos": 272,
+        "prevalence": 0.384180790960452,
+        "auc": 0.9648374257960064,
+        "auc_ci_lo": 0.9512238756385952,
+        "auc_ci_hi": 0.9769226562528899,
+        "sensitivity": 0.9816176470588235,
+        "specificity": 0.8899082568807339,
+        "referral_burden_per1000": 67.79661016949153
+      }
+    },
+    "hc_dark": {
+      "n": 512,
+      "n_pos": 173,
+      "auc": 0.977236687298583,
+      "auc_ci_lo": 0.9653401211849432,
+      "auc_ci_hi": 0.9877985848689408,
+      "sensitivity": 0.976878612716763,
+      "specificity": 0.9144542772861357
+    },
+    "hc_light": null,
+    "score_distribution": {
+      "light": {
+        "neg_mean": 0.002796807601539926,
+        "neg_std": 0.00500242795875918,
+        "pos_mean": 0.8025634765625,
+        "pos_std": 0.4414814876474804
+      },
+      "medium": {
+        "neg_mean": 0.19330309679144442,
+        "neg_std": 0.37189896747934376,
+        "pos_mean": 0.9757309129199953,
+        "pos_std": 0.13176609828262595
+      },
+      "dark": {
+        "neg_mean": 0.12013528061808737,
+        "neg_std": 0.29848992934721136,
+        "pos_mean": 0.9807532815372243,
+        "pos_std": 0.10342998775424249
+      }
+    },
+    "threshold_sweep": {
+      "light": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        }
+      ],
+      "medium": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9793388429752066,
+          "specificity": 0.8020833333333334
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9793388429752066,
+          "specificity": 0.8078703703703703
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9793388429752066,
+          "specificity": 0.8090277777777778
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9793388429752066,
+          "specificity": 0.8125
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9785123966942149,
+          "specificity": 0.8153935185185185
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9760330578512396,
+          "specificity": 0.8188657407407407
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9752066115702479,
+          "specificity": 0.8200231481481481
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9752066115702479,
+          "specificity": 0.8223379629629629
+        }
+      ],
+      "dark": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9889705882352942,
+          "specificity": 0.8623853211009175
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9889705882352942,
+          "specificity": 0.8692660550458715
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9889705882352942,
+          "specificity": 0.8784403669724771
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.8830275229357798
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9816176470588235,
+          "specificity": 0.8899082568807339
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9816176470588235,
+          "specificity": 0.8899082568807339
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.8944954128440367
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.8944954128440367
+        }
+      ]
+    }
+  },
+  "tone-only": {
+    "variant": "tone-only",
+    "n": 3662,
+    "n_pos": 1487,
+    "prevalence": 0.4060622610595303,
+    "auc": 0.9442432112793637,
+    "auc_ci_lo": 0.9372250239743062,
+    "auc_ci_hi": 0.9515784411763839,
+    "sensitivity": 0.9878950907868191,
+    "specificity": 0.8114942528735632,
+    "groups": {
+      "light": {
+        "n": 16,
+        "n_pos": 5,
+        "prevalence": 0.3125,
+        "auc": 1.0,
+        "auc_ci_lo": 1.0,
+        "auc_ci_hi": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "referral_burden_per1000": 0.0
+      },
+      "medium": {
+        "n": 2938,
+        "n_pos": 1210,
+        "prevalence": 0.4118447923757658,
+        "auc": 0.9407393059381695,
+        "auc_ci_lo": 0.9325686733194573,
+        "auc_ci_hi": 0.9491177517582426,
+        "sensitivity": 0.990909090909091,
+        "specificity": 0.7997685185185185,
+        "referral_burden_per1000": 117.76718856364877
+      },
+      "dark": {
+        "n": 708,
+        "n_pos": 272,
+        "prevalence": 0.384180790960452,
+        "auc": 0.9613464651915813,
+        "auc_ci_lo": 0.9474343908375793,
+        "auc_ci_hi": 0.9740559774638006,
+        "sensitivity": 0.9742647058823529,
+        "specificity": 0.8532110091743119,
+        "referral_burden_per1000": 90.3954802259887
+      }
+    },
+    "hc_dark": {
+      "n": 512,
+      "n_pos": 173,
+      "auc": 0.967807389977322,
+      "auc_ci_lo": 0.9516160621941477,
+      "auc_ci_hi": 0.9812520324225854,
+      "sensitivity": 0.9595375722543352,
+      "specificity": 0.8849557522123894
+    },
+    "hc_light": null,
+    "score_distribution": {
+      "light": {
+        "neg_mean": 0.0370315204967152,
+        "neg_std": 0.0717997012574676,
+        "pos_mean": 0.90859375,
+        "pos_std": 0.14324810480858027
+      },
+      "medium": {
+        "neg_mean": 0.23564191232435405,
+        "neg_std": 0.36359018809317784,
+        "pos_mean": 0.9814379731485666,
+        "pos_std": 0.0824871386173445
+      },
+      "dark": {
+        "neg_mean": 0.16888908969362293,
+        "neg_std": 0.3080576022173938,
+        "pos_mean": 0.9582402846392464,
+        "pos_std": 0.131460261150933
+      }
+    },
+    "threshold_sweep": {
+      "light": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 1.0,
+          "specificity": 1.0
+        }
+      ],
+      "medium": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9950413223140496,
+          "specificity": 0.7679398148148148
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9933884297520661,
+          "specificity": 0.7800925925925926
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9933884297520661,
+          "specificity": 0.7847222222222222
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9917355371900827,
+          "specificity": 0.7916666666666666
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.990909090909091,
+          "specificity": 0.7997685185185185
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.990909090909091,
+          "specificity": 0.8043981481481481
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9900826446280991,
+          "specificity": 0.8090277777777778
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9892561983471074,
+          "specificity": 0.8153935185185185
+        }
+      ],
+      "dark": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.8004587155963303
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.8142201834862385
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.8348623853211009
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.841743119266055
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.8532110091743119
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9705882352941176,
+          "specificity": 0.8600917431192661
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9669117647058824,
+          "specificity": 0.8692660550458715
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9595588235294118,
+          "specificity": 0.8830275229357798
+        }
+      ]
+    }
+  },
+  "full": {
+    "variant": "full",
+    "n": 3662,
+    "n_pos": 1487,
+    "prevalence": 0.4060622610595303,
+    "auc": 0.9490412695468002,
+    "auc_ci_lo": 0.9419410228560271,
+    "auc_ci_hi": 0.9555358172823503,
+    "sensitivity": 0.9791526563550773,
+    "specificity": 0.8312643678160919,
+    "groups": {
+      "light": {
+        "n": 16,
+        "n_pos": 5,
+        "prevalence": 0.3125,
+        "auc": 1.0,
+        "auc_ci_lo": 0.9999999999999999,
+        "auc_ci_hi": 1.0,
+        "sensitivity": 0.8,
+        "specificity": 1.0,
+        "referral_burden_per1000": 0.0
+      },
+      "medium": {
+        "n": 2938,
+        "n_pos": 1210,
+        "prevalence": 0.4118447923757658,
+        "auc": 0.9437641088919497,
+        "auc_ci_lo": 0.9355132929143399,
+        "auc_ci_hi": 0.9518065985688154,
+        "sensitivity": 0.9801652892561984,
+        "specificity": 0.8252314814814815,
+        "referral_burden_per1000": 102.79101429543906
+      },
+      "dark": {
+        "n": 708,
+        "n_pos": 272,
+        "prevalence": 0.384180790960452,
+        "auc": 0.9673924042093902,
+        "auc_ci_lo": 0.9547142034147041,
+        "auc_ci_hi": 0.978838709625614,
+        "sensitivity": 0.9779411764705882,
+        "specificity": 0.8509174311926605,
+        "referral_burden_per1000": 91.8079096045198
+      }
+    },
+    "hc_dark": {
+      "n": 512,
+      "n_pos": 173,
+      "auc": 0.9765631660613501,
+      "auc_ci_lo": 0.9644730456614089,
+      "auc_ci_hi": 0.9868634352290191,
+      "sensitivity": 0.9653179190751445,
+      "specificity": 0.8849557522123894
+    },
+    "hc_light": null,
+    "score_distribution": {
+      "light": {
+        "neg_mean": 0.019257079471241344,
+        "neg_std": 0.023440471411227078,
+        "pos_mean": 0.8341796875,
+        "pos_std": 0.33633498695453473
+      },
+      "medium": {
+        "neg_mean": 0.189216381993093,
+        "neg_std": 0.35190443777988445,
+        "pos_mean": 0.9660205179009556,
+        "pos_std": 0.11193823314380084
+      },
+      "dark": {
+        "neg_mean": 0.16926732717440762,
+        "neg_std": 0.30274975762483525,
+        "pos_mean": 0.9650147381950828,
+        "pos_std": 0.11973311458099765
+      }
+    },
+    "threshold_sweep": {
+      "light": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        }
+      ],
+      "medium": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9925619834710744,
+          "specificity": 0.8107638888888888
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9884297520661157,
+          "specificity": 0.8148148148148148
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.984297520661157,
+          "specificity": 0.8182870370370371
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9809917355371901,
+          "specificity": 0.8229166666666666
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9801652892561984,
+          "specificity": 0.8252314814814815
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9768595041322314,
+          "specificity": 0.8269675925925926
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9743801652892562,
+          "specificity": 0.8310185185185185
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.971900826446281,
+          "specificity": 0.8327546296296297
+        }
+      ],
+      "dark": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9926470588235294,
+          "specificity": 0.805045871559633
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.8142201834862385
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.823394495412844
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9852941176470589,
+          "specificity": 0.8348623853211009
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.8509174311926605
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.8623853211009175
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.8738532110091743
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.8853211009174312
+        }
+      ]
+    }
+  },
+  "balanced-baseline": {
+    "variant": "balanced-baseline",
+    "n": 3662,
+    "n_pos": 1487,
+    "prevalence": 0.4060622610595303,
+    "auc": 0.9482515904119224,
+    "auc_ci_lo": 0.940880114005803,
+    "auc_ci_hi": 0.9548891614718538,
+    "sensitivity": 0.9825151311365165,
+    "specificity": 0.8381609195402299,
+    "groups": {
+      "light": {
+        "n": 16,
+        "n_pos": 5,
+        "prevalence": 0.3125,
+        "auc": 1.0,
+        "auc_ci_lo": 1.0,
+        "auc_ci_hi": 1.0,
+        "sensitivity": 0.8,
+        "specificity": 1.0,
+        "referral_burden_per1000": 0.0
+      },
+      "medium": {
+        "n": 2938,
+        "n_pos": 1210,
+        "prevalence": 0.4118447923757658,
+        "auc": 0.9423527414294459,
+        "auc_ci_lo": 0.9339793498999313,
+        "auc_ci_hi": 0.9502635780675686,
+        "sensitivity": 0.9851239669421488,
+        "specificity": 0.8188657407407407,
+        "referral_burden_per1000": 106.53505786249153
+      },
+      "dark": {
+        "n": 708,
+        "n_pos": 272,
+        "prevalence": 0.384180790960452,
+        "auc": 0.9736744468429573,
+        "auc_ci_lo": 0.9623277831064323,
+        "auc_ci_hi": 0.9836153592882253,
+        "sensitivity": 0.9742647058823529,
+        "specificity": 0.9105504587155964,
+        "referral_burden_per1000": 55.08474576271184
+      }
+    },
+    "hc_dark": {
+      "n": 512,
+      "n_pos": 173,
+      "auc": 0.9820621685678722,
+      "auc_ci_lo": 0.9708049106656782,
+      "auc_ci_hi": 0.991045494427865,
+      "sensitivity": 0.9595375722543352,
+      "specificity": 0.9410029498525073
+    },
+    "hc_light": null,
+    "score_distribution": {
+      "light": {
+        "neg_mean": 0.02485635063864968,
+        "neg_std": 0.06685562911609043,
+        "pos_mean": 0.85078125,
+        "pos_std": 0.3183821406737507
+      },
+      "medium": {
+        "neg_mean": 0.19089491258340854,
+        "neg_std": 0.3576112809610155,
+        "pos_mean": 0.9720798713116606,
+        "pos_std": 0.1087279751226261
+      },
+      "dark": {
+        "neg_mean": 0.10085238031017671,
+        "neg_std": 0.2610183507499076,
+        "pos_mean": 0.9565142463235294,
+        "pos_std": 0.12767565673675396
+      }
+    },
+    "threshold_sweep": {
+      "light": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.8,
+          "specificity": 1.0
+        }
+      ],
+      "medium": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9900826446280991,
+          "specificity": 0.8078703703703703
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9884297520661157,
+          "specificity": 0.8113425925925926
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.987603305785124,
+          "specificity": 0.8153935185185185
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9867768595041322,
+          "specificity": 0.8159722222222222
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9851239669421488,
+          "specificity": 0.8188657407407407
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9826446280991735,
+          "specificity": 0.8206018518518519
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9801652892561984,
+          "specificity": 0.8246527777777778
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9743801652892562,
+          "specificity": 0.8292824074074074
+        }
+      ],
+      "dark": [
+        {
+          "threshold": 0.3,
+          "sensitivity": 0.9889705882352942,
+          "specificity": 0.8944954128440367
+        },
+        {
+          "threshold": 0.35,
+          "sensitivity": 0.9816176470588235,
+          "specificity": 0.8944954128440367
+        },
+        {
+          "threshold": 0.4,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.9036697247706422
+        },
+        {
+          "threshold": 0.45,
+          "sensitivity": 0.9779411764705882,
+          "specificity": 0.9059633027522935
+        },
+        {
+          "threshold": 0.5,
+          "sensitivity": 0.9742647058823529,
+          "specificity": 0.9105504587155964
+        },
+        {
+          "threshold": 0.55,
+          "sensitivity": 0.9705882352941176,
+          "specificity": 0.9174311926605505
+        },
+        {
+          "threshold": 0.6,
+          "sensitivity": 0.9705882352941176,
+          "specificity": 0.9197247706422018
+        },
+        {
+          "threshold": 0.65,
+          "sensitivity": 0.9669117647058824,
+          "specificity": 0.9220183486238532
+        }
+      ]
+    }
+  },
+  "_permutation_tests": {
+    "baseline": {
+      "dark_spec": 0.8440366972477065,
+      "light_spec": 1.0,
+      "spec_gap": 0.15596330275229353,
+      "spec_gap_p": 0.14585834333733494,
+      "spec_cohen_h": -0.8119656668873683,
+      "dark_sens": 0.9963235294117647,
+      "light_sens": 0.8,
+      "sens_gap": 0.19632352941176467,
+      "sens_gap_p": 0.011604641856742696,
+      "sens_cohen_h": 0.8059529760229305
+    },
+    "aug-only": {
+      "dark_spec": 0.8899082568807339,
+      "light_spec": 1.0,
+      "spec_gap": 0.11009174311926606,
+      "spec_gap_p": 0.2585034013605442,
+      "spec_cohen_h": -0.6764236682846119,
+      "dark_sens": 0.9816176470588235,
+      "light_sens": 0.8,
+      "sens_gap": 0.18161764705882344,
+      "sens_gap_p": 0.03842305383229938,
+      "sens_cohen_h": 0.6552944281918673
+    },
+    "tone-only": {
+      "dark_spec": 0.8532110091743119,
+      "light_spec": 1.0,
+      "spec_gap": 0.14678899082568808,
+      "spec_gap_p": 0.16646658663465386,
+      "spec_cohen_h": -0.7863660959942713,
+      "dark_sens": 0.9742647058823529,
+      "light_sens": 1.0,
+      "sens_gap": 0.02573529411764708,
+      "sens_gap_p": 0.8243648729745949,
+      "sens_cohen_h": -0.3222368308823995
+    },
+    "full": {
+      "dark_spec": 0.8509174311926605,
+      "light_spec": 1.0,
+      "spec_gap": 0.1490825688073395,
+      "spec_gap_p": 0.16389833900340203,
+      "spec_cohen_h": -0.7928262625734659,
+      "dark_sens": 0.9779411764705882,
+      "light_sens": 0.8,
+      "sens_gap": 0.17794117647058816,
+      "sens_gap_p": 0.04243394715772618,
+      "sens_cohen_h": 0.629147895657411
+    },
+    "balanced-baseline": {
+      "dark_spec": 0.9105504587155964,
+      "light_spec": 1.0,
+      "spec_gap": 0.08944954128440363,
+      "spec_gap_p": 0.29411764705882354,
+      "spec_cohen_h": -0.6074591909000269,
+      "dark_sens": 0.9742647058823529,
+      "light_sens": 0.8,
+      "sens_gap": 0.17426470588235288,
+      "sens_gap_p": 0.051641313050440354,
+      "sens_cohen_h": 0.6050583871192128
+    },
+    "_auc_gap_full_vs_baseline_dark": {
+      "full_dark_auc": 0.9673924042093902,
+      "baseline_dark_auc": 0.9634165879654615,
+      "auc_gap": 0.0039758162439287315,
+      "auc_gap_p": 0.673
+    }
+  },
+  "_metadata": {
+    "dataset": "APTOS 2019",
+    "n_images": 3662,
+    "n_referable": 1487,
+    "prevalence": 0.4060622610595303,
+    "binarisation": "grades 0-1 \u2192 0 (non-referable), 2-4 \u2192 1 (referable)",
+    "evaluation": "zero-shot (no fine-tuning)",
+    "odcr_dark_thresh": -29.0,
+    "odcr_light_thresh": 20.0,
+    "odcr_dark_hc": -40.0,
+    "odcr_light_hc": 30.0,
+    "threshold": 0.5,
+    "n_bootstrap": 2000,
+    "n_perm": 5000,
+    "seed": 42
+  }
+}

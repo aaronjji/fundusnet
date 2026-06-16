@@ -1,0 +1,14 @@
+{
+  "variant": "aug-only",
+  "use_odcr": false,
+  "use_dark_aug": true,
+  "oversample_dark": true,
+  "balanced": false,
+  "best_val_auc": 0.8783607895809933,
+  "group_aucs": {
+    "light": 0.8740025338476666,
+    "medium": 0.8885348222460487,
+    "dark": 0.8715939591889532
+  },
+  "fairness_gap": 0.016940863057095523
+}
