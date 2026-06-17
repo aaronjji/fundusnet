@@ -1,9 +1,6 @@
 # FundusNet
 
-**Pigmentation-Induced Contrast Reduction as a Fairness Bottleneck in Diabetic Retinopathy AI**
-
-Target: TMLR (October 2025 submission)
-Extends: SkinToneNet (TMLR June 2025)
+**____________**
 
 ---
 
