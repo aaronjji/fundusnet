@@ -4,6 +4,11 @@ data/train_512/
 data/aptos/
 data/odcr/
 
+# EyePACS labels/splits — redistributes Kaggle competition data; download
+# trainLabels.csv per the README and regenerate splits/ via split.py instead
+data/trainLabels.csv
+data/splits/*.csv
+
 # Model checkpoints
 checkpoints/
 *.pt

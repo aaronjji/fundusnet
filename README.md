@@ -2,8 +2,15 @@
 
 **Pigmentation-Induced Contrast Reduction as a Fairness Bottleneck in Diabetic Retinopathy AI**
 
-Target: TMLR (October 2025 submission)
-Extends: SkinToneNet (TMLR June 2025)
+Aaron Jji
+
+Preprint: medRxiv — TBD (link and DOI will be added here once the preprint is posted)
+
+---
+
+## License
+
+Code is licensed under the [MIT License](LICENSE). The accompanying paper is licensed separately under CC BY — see the preprint for terms.
 
 ---
 
@@ -33,7 +40,7 @@ fundusnet/
 
 ## Quickstart
 
-### 1. Get EyePACS data
+### 1. Get EyePACS data (training, validation, and the locked test set)
 ```bash
 pip install kaggle
 # Put kaggle.json in ~/.kaggle/
@@ -41,22 +48,30 @@ kaggle competitions download -c diabetic-retinopathy-detection
 unzip diabetic-retinopathy-detection.zip -d data/
 ```
 
-### 2. Install dependencies
+### 2. Get APTOS 2019 data (external validation only)
+```bash
+kaggle competitions download -c aptos2019-blindness-detection
+unzip aptos2019-blindness-detection.zip -d data/aptos/
+```
+Used only for zero-shot external validation (`src/evaluation/evaluate_aptos.py`);
+no APTOS images are used in training.
+
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Quick sanity check (500 images, ~5 minutes)
+### 4. Quick sanity check (500 images, ~5 minutes)
 ```bash
 python run_preprocessing.py --step all --debug
 ```
 
-### 4. Full pipeline (~2-3 hours on 8 CPU cores)
+### 5. Full pipeline (~2-3 hours on 8 CPU cores)
 ```bash
 python run_preprocessing.py --step all
 ```
 
-### 5. Check the key result
+### 6. Check the key result
 ```bash
 cat results/snr_analysis/snr_summary.json
 ```
@@ -93,3 +108,15 @@ photography uses green-channel emphasis.
 Do not examine per-subgroup metrics on the test set until all ablation variants
 are trained. This mirrors SkinToneNet's methodology exactly.
 Pre-specify all three permutation tests before unblinding.
+
+---
+
+## Data Access & Licensing
+
+No dataset images are redistributed in this repository — only code, generated
+splits/metadata, and result summaries. Download the source data yourself:
+
+- **EyePACS** (training/validation/test): [Kaggle — Diabetic Retinopathy Detection](https://www.kaggle.com/competitions/diabetic-retinopathy-detection) competition terms apply.
+- **APTOS 2019** (external validation only): [Kaggle — APTOS 2019 Blindness Detection](https://www.kaggle.com/competitions/aptos2019-blindness-detection) competition terms apply.
+
+See [Quickstart](#quickstart) above for download commands.
