@@ -1,6 +1,6 @@
 # FundusNet
 
-**Pigmentation-Induced Contrast Reduction as a Fairness Bottleneck in Diabetic Retinopathy AI**
+**Code for: Optic Disc Colour Ratio: A Fundus Pigmentation Proxy for Subgroup Fairness Analysis in Diabetic Retinopathy Screening**
 
 Preprint: medRxiv — TBD (link and DOI will be added here once the preprint is posted)
 
