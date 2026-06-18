@@ -2,8 +2,6 @@
 
 **Pigmentation-Induced Contrast Reduction as a Fairness Bottleneck in Diabetic Retinopathy AI**
 
-Aaron Jji
-
 Preprint: medRxiv — TBD (link and DOI will be added here once the preprint is posted)
 
 ---
