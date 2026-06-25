@@ -2,7 +2,7 @@
 
 **Code for: *Optic Disc Colour Ratio: A Fundus Pigmentation Proxy for Subgroup Fairness Analysis in Diabetic Retinopathy Screening***
 
-Preprint: ResearchSquare — https://doi.org/10.21203/rs.3.rs-10133196/v1
+Preprint: Research Square — https://doi.org/10.21203/rs.3.rs-10133196/v1
 
 ## License
 
